@@ -1,7 +1,7 @@
 Flask Method Override
 =====================
 
-.. image:: https://secure.travis-ci.org/rhyselsmore/flask-method-rewrite.png?branch=master
+.. image:: https://secure.travis-ci.org/rhyselsmore/flask-method-override.png?branch=master
 
 *Under Construction*
 
