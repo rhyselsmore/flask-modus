@@ -5,4 +5,4 @@ Flask Method-Rewrite
 
 *Under Construction*
 
-Enable PUT/DELETE/PATCH via the URL Query String
+Enable Flask Method overrides via Query String and Headers
