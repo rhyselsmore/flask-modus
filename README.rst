@@ -1,5 +1,7 @@
-flask-method-rewrite
-==============
+Flask Method-Rewrite
+====================
+
+.. image:: https://secure.travis-ci.org/rhyselsmore/flask-method-rewrite.png?branch=master
 
 *Under Construction*
 
