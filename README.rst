@@ -1,5 +1,5 @@
-Flask Method-Rewrite
-====================
+Flask Method Override
+=====================
 
 .. image:: https://secure.travis-ci.org/rhyselsmore/flask-method-rewrite.png?branch=master
 
