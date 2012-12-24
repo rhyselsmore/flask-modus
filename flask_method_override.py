@@ -4,7 +4,7 @@ from werkzeug import url_decode
 
 
 class Middleware(object):
-    """ WSGI Method Rewriting Middleware """
+    """ WSGI Method Overriding Middleware """
 
     allowed_methods = frozenset([
         'GET',
@@ -47,8 +47,8 @@ class Middleware(object):
         return self.app(environ, response)
 
 
-class MethodRewrite(object):
-    """ Enables Flask Method Rewriting """
+class MethodOverride(object):
+    """ Enables Flask Method Overriding """
 
     def __init__(self, app=None):
         self.app = app
@@ -57,6 +57,6 @@ class MethodRewrite(object):
             self.init_app(self.app)
 
     def init_app(self, app):
-        """ Configures the Flask Rewriting Middleware """
+        """ Configures the Flask Overriding Middleware """
 
         app.wsgi_app = Middleware(app.wsgi_app)

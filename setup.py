@@ -1,5 +1,5 @@
 """
-Flask-MethodRewrite
+Flask-MethodOverride
 ------------
 
 This is a simple Flask extension that configures your Flask
@@ -10,15 +10,15 @@ application to handle method overrides when POSTing.
 from setuptools import setup
 
 setup(
-    name='Flask-MethodRewrite',
+    name='Flask-MethodOverride',
     version='0.0.1',
-    url='https://github.com/rhyselsmore/flask-method-rewrite',
+    url='https://github.com/rhyselsmore/flask-method-override',
     license='BSD',
     author='Rhys Elsmore',
     author_email='me@rhys.io',
-    description='Flask Method Rewriting Middleware.',
+    description='Flask Method Overriding Middleware.',
     long_description=__doc__,
-    py_modules=['flask_method_rewrite'],
+    py_modules=['flask_method_override'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',

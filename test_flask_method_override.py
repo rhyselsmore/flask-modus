@@ -3,10 +3,10 @@
 
 import unittest
 from flask import Flask, request
-from flask_method_rewrite import MethodRewrite
+from flask_method_rewrite import MethodOverride
 
 
-class MethodRewriteTestCase(unittest.TestCase):
+class MethodOverrideTestCase(unittest.TestCase):
 
     def setUp(self):
         """ Construct our Flask Test App """
@@ -18,8 +18,8 @@ class MethodRewriteTestCase(unittest.TestCase):
             return "put"
 
         self.app = Flask(__name__)
-        method_rewrite = MethodRewrite()
-        method_rewrite.init_app(self.app)
+        method_override = MethodOverride()
+        method_override.init_app(self.app)
         self.app.add_url_rule('/', 'index', index, methods=['GET'])
         self.app.add_url_rule('/', 'put', put, methods=['PUT'])
         self.client = self.app.test_client()
