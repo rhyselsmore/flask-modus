@@ -55,4 +55,4 @@ or supply a X-HTTP-Method-Override header::
 
     $ curl -H "X-HTTP-Method-Override: PUT" http://localhost:5000/
 
-*Note:* The assignment of a custom header will always be honoured with the headers first. If you supply a header and a query string paramter, the method specified in the header will be that which is used.
+*Note:* If you supply both a header and a query string parameter, the method specified in the header will be that which is used.
