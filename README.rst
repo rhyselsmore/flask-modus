@@ -1,7 +1,7 @@
-Flask Method Override
+Flask-Modus
 =====================
 
-.. image:: https://secure.travis-ci.org/rhyselsmore/flask-method-override.png?branch=master
+.. image:: https://secure.travis-ci.org/rhyselsmore/flask-modus.png?branch=master
 
 *Under Construction*
 
@@ -12,7 +12,7 @@ Installation
 
 Installation is very straightforward::
 
-    pip install flask-methodoverride
+    pip install flask-modus
 
 Usage
 -----
@@ -20,16 +20,16 @@ Usage
 Usage is even simpler::
 
     from flask import Flask
-    from flask_method_override import MethodOverride
+    from flask_modus import Modus
 
     app = Flask(__name__)
-    method_override = MethodOverride(app)
+    modus = Modus(app)
 
 *or*::
 
     from flask import Flask
-    from flask_method_override import MethodOverride
+    from flask_modus import Modus
 
     app = Flask(__name__)
-    method_override = MethodOverride()
-    method_override.init_app(app)
+    modus = Modus()
+    modus.init_app(app)

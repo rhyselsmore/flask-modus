@@ -3,7 +3,7 @@
 
 import unittest
 from flask import Flask, request
-from flask_method_override import MethodOverride
+from flask_modus import Modus
 
 
 class MethodOverrideTestCase(unittest.TestCase):
@@ -18,8 +18,8 @@ class MethodOverrideTestCase(unittest.TestCase):
             return "put"
 
         self.app = Flask(__name__)
-        method_override = MethodOverride()
-        method_override.init_app(self.app)
+        modus = Modus()
+        modus.init_app(self.app)
         self.app.add_url_rule('/', 'index', index, methods=['GET'])
         self.app.add_url_rule('/', 'put', put, methods=['PUT'])
         self.client = self.app.test_client()

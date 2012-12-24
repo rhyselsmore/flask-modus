@@ -47,7 +47,7 @@ class Middleware(object):
         return self.app(environ, response)
 
 
-class MethodOverride(object):
+class Modus(object):
     """ Enables Flask Method Overriding """
 
     def __init__(self, app=None):
