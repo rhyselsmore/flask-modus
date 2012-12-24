@@ -3,7 +3,7 @@
 
 import unittest
 from flask import Flask, request
-from flask_method_rewrite import MethodOverride
+from flask_method_override import MethodOverride
 
 
 class MethodOverrideTestCase(unittest.TestCase):
