@@ -10,10 +10,14 @@ Enable Flask Method overrides via Query String and Headers
 Installation
 ------------
 
+Installation is very straightforward::
+
     pip install flask-methodoverride
 
-Configuration
--------------
+Usage
+-----
+
+Usage is even simpler::
 
     from flask import Flask
     from flask_method_override import MethodOverride
@@ -21,7 +25,7 @@ Configuration
     app = Flask(__name__)
     method_override = MethodOverride(app)
 
-*or*
+*or*::
 
     from flask import Flask
     from flask_method_override import MethodOverride
