@@ -1,32 +1,48 @@
+#!/usr/bin/env python
+
 """
-Flask-Modus
+Flask-Reggie
 ------------
 
-This is a simple Flask extension that configures your Flask
-application to handle method overrides when POSTing.
+Quickly and Easily enable Regex Routes within your Flask Application
 
 """
 
-from setuptools import setup
+import os
+import sys
+
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
+if sys.argv[-1] == 'publish':
+    os.system('python setup.py sdist upload')
+    sys.exit()
+
 
 setup(
     name='Flask-Modus',
-    version='0.0.1',
-    url='https://github.com/rhyselsmore/flask-modus',
-    license='BSD',
+    version='0.0.2',
+    url='http://github.com/rhyselsmore/flask-modus',
     author='Rhys Elsmore',
     author_email='me@rhys.io',
-    description='Flask Method Overriding Middleware.',
-    long_description=__doc__,
+    description='Flask Method Overrides.',
+    long_description=open('README.rst').read() + '\n\n' +
+        open('HISTORY.rst').read(),
     py_modules=['flask_modus'],
+    license=open('LICENSE').read(),
+    package_data={'': ['LICENSE']},
     zip_safe=False,
-    include_package_data=True,
     platforms='any',
-    install_requires=['Flask'],
+    install_requires=[
+        'setuptools',
+        'Flask',
+    ],
     classifiers=[
+        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
