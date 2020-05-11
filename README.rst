@@ -1,3 +1,7 @@
+~*~*~*~*~*~*~*~*~* Warning ~*~*~*~*~*~*~*~*~* 
+
+Due to it's lack of security controls, and the lack of CSRF in Flask, I am recommending that you don't use this library -- and instead write your own solution start to finish to understand the nuance of allowing request methods to be specified in GET parameters.
+
 Flask-Modus
 =====================
 
